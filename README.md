@@ -53,9 +53,14 @@
 
 - `assets/aoriika-catch.jpg`：アオリイカ釣果写真
 - `assets/isaki-catch.jpg`：イサキ釣果写真
-- `assets/sunrise-sea.jpg`：朝日・海の風景写真
-- `assets/rock-walk.jpg`：磯歩き写真
 - `assets/fishing-person.jpg`：釣行中の人物写真
+- `assets/needlefish-catch.jpg`：夜釣り釣果写真
+- `assets/rockfish-reel.jpg`：根魚とリールの釣果写真
+- `assets/rockfish-catch.jpg`：カサゴ類の釣果写真
+- `assets/bluefish-catch.jpg`：青物の釣果写真
+- `assets/mackerel-catch.jpg`：サバの釣果写真
+- `assets/bonito-closeup.jpg`：カツオ類の釣果写真
+- `assets/lobster-catch.jpg`：夜釣りの釣果写真
 
 ## デザイン更新内容
 
