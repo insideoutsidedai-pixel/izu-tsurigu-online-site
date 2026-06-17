@@ -47,6 +47,25 @@
 - `styles.css`：デザイン指定
 - `script.js`：スマホメニュー制御
 - `README.md`：プロジェクト説明
+- `assets/`：サイトで使用する軽量化済み画像
+
+## 使用画像
+
+- `assets/aoriika-catch.jpg`：アオリイカ釣果写真
+- `assets/isaki-catch.jpg`：イサキ釣果写真
+- `assets/sunrise-sea.jpg`：朝日・海の風景写真
+- `assets/rock-walk.jpg`：磯歩き写真
+- `assets/fishing-person.jpg`：釣行中の人物写真
+
+## デザイン更新内容
+
+- ファーストビューにアオリイカ釣果写真を使用
+- 運営者についての実釣経験セクションを追加
+- 横スクロールの釣行ギャラリーを追加
+- ギャラリー画像のクリック拡大表示を追加
+- 販売チャネルの表記を「ショップを見る」に統一
+- 取扱商品カードに画像を追加
+- 電話、FAX、メールをアイコン付きカード表示に変更
 
 ## Cloudflare Pages 設定
 
