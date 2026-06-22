@@ -62,7 +62,7 @@ button:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
   color: var(--navy-900);
   text-decoration: none;
@@ -72,15 +72,17 @@ button:focus-visible {
   display: inline-grid;
   flex: 0 0 auto;
   place-items: center;
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   overflow: hidden;
   background: var(--white);
   background-image: url("./assets/company-logo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 4px;
   border: 1px solid rgba(20, 95, 141, 0.18);
+  box-shadow: 0 8px 20px rgba(7, 24, 39, 0.08);
 }
 
 .brand-mark img {
@@ -537,12 +539,6 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.product-list .wide {
-  grid-column: span 2;
-  border-color: rgba(39, 130, 184, 0.35);
-  background: linear-gradient(180deg, var(--white), var(--cyan-100));
-}
-
 .product-list article {
   position: relative;
   overflow: hidden;
@@ -922,7 +918,7 @@ h1 {
 
   .site-nav {
     position: fixed;
-    inset: 73px 0 auto 0;
+    inset: 81px 0 auto 0;
     display: none;
     grid-template-columns: 1fr;
     gap: 0;
@@ -958,8 +954,8 @@ h1 {
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
   }
 
   .brand-text strong {
