@@ -61,6 +61,7 @@ document.querySelectorAll("[data-lightbox]").forEach((button) => {
     lightboxImage.src = imageUrl || "";
     lightboxImage.alt = caption;
     lightboxCaption.textContent = caption;
+    lightboxCaption.hidden = caption === "";
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("menu-open");
