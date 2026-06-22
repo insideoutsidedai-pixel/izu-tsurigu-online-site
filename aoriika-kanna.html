@@ -1,152 +1,1007 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>自作カンナの紹介｜伊豆釣具オンライン合同会社</title>
-    <meta name="description" content="伊豆釣具オンライン合同会社が取り扱うアオリイカ用品、自作カンナ、仕掛け関連用品の紹介ページです。">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="https://izuokappari.com/aoriika-kanna.html">
-    <link rel="icon" href="./assets/izu-logo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="./styles.css?v=20260622-logo">
-  </head>
-  <body>
-    <header class="site-header" data-header>
-      <a class="brand" href="index.html#top" aria-label="伊豆釣具オンライン合同会社 トップへ">
-        <span class="brand-mark">
-          <img src="./assets/izu-logo.jpg" alt="伊豆釣具オンライン合同会社 ロゴ">
-        </span>
-        <span class="brand-text">
-          <strong>伊豆釣具オンライン合同会社</strong>
-          <small>Izu Tsurigu Online LLC</small>
-        </span>
-      </a>
-      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-        メニュー
-      </button>
-      <nav class="site-nav" id="site-nav" data-nav aria-label="主要メニュー">
-        <a href="index.html#business">事業内容</a>
-        <a href="index.html#channels">販売チャネル</a>
-        <a href="index.html#products">取扱商品</a>
-        <a href="index.html#company">会社概要</a>
-        <a href="index.html#contact">お問い合わせ</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>自作カンナの紹介｜伊豆釣具オンライン合同会社</title>
+  <meta name="description" content="アオリイカ釣り向けの自作カンナ、仕掛け関連用品を紹介する伊豆釣具オンライン合同会社のページです。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <main id="top">
-      <section class="kanna-hero">
-        <img src="assets/aoriika-catch.jpg" alt="アオリイカ釣果写真">
-        <div class="kanna-hero-copy">
-          <p class="eyebrow">Aoriika Kanna</p>
-          <h1>自作カンナの紹介</h1>
-          <p>
-            アオリイカ釣りで使用するカンナ、仕掛け関連用品、接続パーツを紹介しています。
-            実釣での扱いやすさを重視し、販売チャネルにて順次取り扱っています。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#lineup">ラインナップを見る</a>
-            <a class="button outline" href="index.html#products">取扱商品へ戻る</a>
-          </div>
-        </div>
-      </section>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #0a0a0a; --dark: #111111; --dark2: #1a1a1a; --dark3: #222222;
+      --gold: #c9a84c; --gold-light: #e2c476; --white: #f5f5f5;
+      --gray: #888888; --gray-light: #bbbbbb;
+      --font-jp: 'Noto Sans JP', sans-serif; --font-en: 'Oswald', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--white); font-family: var(--font-jp); font-size: 16px; line-height: 1.8; overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
 
-      <section class="section kanna-dark">
-        <div class="section-heading">
-          <p class="eyebrow">Concept</p>
-          <h2>実釣での使いやすさを重視したカンナ</h2>
-          <p>アオリイカ釣りで必要になる操作性、交換のしやすさ、仕掛け全体との相性を考慮して用品を選定しています。</p>
-        </div>
-        <div class="kanna-feature-grid">
-          <article>
-            <span>01</span>
-            <h3>扱いやすい形状</h3>
-            <p>仕掛けに組み込みやすく、釣行前後の確認や交換がしやすい用品を中心に取り扱っています。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>実釣向けの構成</h3>
-            <p>ウキ釣りや活き餌を使う釣り方など、現場で使う仕掛けに合わせやすい構成を重視しています。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>販売チャネルで案内</h3>
-            <p>在庫状況や販売価格は、各オンライン販売チャネルの商品ページで確認できるようにしています。</p>
-          </article>
-        </div>
-      </section>
+    /* FADE-IN */
+    .fade-in { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-delay-1 { transition-delay: 0.1s; } .fade-in-delay-2 { transition-delay: 0.2s; }
+    .fade-in-delay-3 { transition-delay: 0.3s; } .fade-in-delay-4 { transition-delay: 0.4s; }
+    .fade-in-delay-5 { transition-delay: 0.5s; }
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Use Scene</p>
-          <h2>アオリイカ釣り向け用品</h2>
-          <p>カンナ単体だけでなく、仕掛け作りに必要な周辺パーツも含めて取り扱っています。</p>
-        </div>
-        <div class="kanna-media-layout">
-          <img src="assets/aoriika-catch.jpg" alt="アオリイカ用品の使用イメージ" loading="lazy">
-          <div class="kanna-list">
-            <article>
-              <strong>自作カンナ</strong>
-              <p>仕掛けに合わせて使用するカンナ関連用品を取り扱っています。</p>
-            </article>
-            <article>
-              <strong>仕掛け関連用品</strong>
-              <p>釣行時に使う仕掛け周辺の用品を取り扱っています。</p>
-            </article>
-            <article>
-              <strong>接続パーツ</strong>
-              <p>スナップ、スイベル、サルカンなど、仕掛け作りに使うパーツを取り扱っています。</p>
-            </article>
-          </div>
-        </div>
-      </section>
+    /* COMMON */
+    section { padding: 80px 20px; }
+    .container { max-width: 680px; margin: 0 auto; }
+    .section-label { font-family: var(--font-en); font-size: 11px; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; display: block; }
+    .section-title { font-size: clamp(24px, 6vw, 36px); font-weight: 700; line-height: 1.4; margin-bottom: 32px; }
+    .section-title span { color: var(--gold); }
+    .divider { width: 40px; height: 2px; background: var(--gold); margin: 24px 0; }
 
-      <section id="lineup" class="section muted">
-        <div class="section-heading">
-          <p class="eyebrow">Lineup</p>
-          <h2>主なラインナップ</h2>
-          <p>販売状況に応じて、各販売チャネルにて商品を掲載しています。</p>
-        </div>
-        <div class="kanna-lineup">
-          <article>
-            <span>AJI RIG</span>
-            <h3>アジ用仕掛け</h3>
-            <p>活き餌を使うアオリイカ釣り向けの仕掛け関連用品です。</p>
-            <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aori4.html?openExternalBrowser=1" target="_blank" rel="noopener">Yahoo!ショッピングで見る</a>
-          </article>
-          <article>
-            <span>BAIT RIG</span>
-            <h3>小型ベイト対応仕掛け</h3>
-            <p>小型の活き餌を使う釣り方に合わせた仕掛け関連用品です。</p>
-            <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/binnbinn4.html?openExternalBrowser=1" target="_blank" rel="noopener">Yahoo!ショッピングで見る</a>
-          </article>
-          <article>
-            <span>KANNA ONLY</span>
-            <h3>カンナ単品</h3>
-            <p>仕掛けを自作・調整する方向けのカンナ単品です。</p>
-            <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aorik5.html?openExternalBrowser=1" target="_blank" rel="noopener">Yahoo!ショッピングで見る</a>
-          </article>
-        </div>
-        <div class="page-actions">
-          <a class="button primary" href="index.html#channels">販売チャネルを見る</a>
-          <a class="button outline dark" href="index.html#contact">お問い合わせ</a>
-        </div>
-      </section>
-    </main>
+    /* HEADER */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); backdrop-filter: blur(4px); }
+    .header-logo { font-family: var(--font-en); font-size: 14px; font-weight: 700; letter-spacing: 0.15em; color: var(--gold); }
+    .header-logo span { display: block; font-size: 10px; font-weight: 400; color: var(--gray-light); letter-spacing: 0.2em; }
+    .header-cta { background: var(--gold); color: var(--black); padding: 10px 18px; border-radius: 4px; font-size: 12px; font-weight: 700; transition: background 0.3s, transform 0.2s; }
+    .header-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
 
-    <footer class="site-footer">
-      <div class="footer-brand">
-        <img class="footer-logo" src="./assets/izu-logo.jpg" alt="" loading="lazy">
-        <div>
-          <strong>伊豆釣具オンライン合同会社</strong>
-          <span>法人番号 6021003017602</span>
+    /* HERO */
+    #hero { position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 0; }
+    .hero-bg-dummy {
+      position: absolute; inset: 0;
+      background: url('assets/kanna/ika14.jpg') center/cover no-repeat;
+      filter: brightness(0.28);
+    }
+    .hero-bg-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.5) 100%);
+      pointer-events: none;
+    }
+    .hero-wave { position: absolute; bottom: 0; left: 0; right: 0; height: 200px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); pointer-events: none; }
+    .stars { position: absolute; inset: 0; pointer-events: none; }
+    .star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle var(--dur,3s) var(--delay,0s) infinite alternate; }
+    @keyframes twinkle { 0%{opacity:0.1} 100%{opacity:0.8} }
+    .hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 24px 80px; }
+    .hero-badge { display: inline-block; border: 1px solid var(--gold); color: var(--gold); font-family: var(--font-en); font-size: 10px; letter-spacing: 0.35em; padding: 6px 16px; margin-bottom: 28px; animation: fadeSlideDown 1s ease forwards; }
+    @keyframes fadeSlideDown { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:translateY(0)} }
+    .hero-title { font-size: clamp(36px,10vw,72px); font-weight: 900; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 8px; animation: fadeSlideUp 1s 0.2s ease both; }
+    .hero-title .gold { color: var(--gold); }
+    .hero-title .outline { -webkit-text-stroke: 1px var(--white); color: transparent; }
+    .hero-subtitle { font-size: clamp(13px,3.5vw,18px); color: var(--gray-light); letter-spacing: 0.15em; margin-bottom: 40px; animation: fadeSlideUp 1s 0.4s ease both; }
+    .hero-catch { font-size: clamp(15px,4vw,20px); font-weight: 500; color: var(--white); line-height: 1.7; margin-bottom: 48px; animation: fadeSlideUp 1s 0.6s ease both; }
+    .hero-catch strong { color: var(--gold); }
+    @keyframes fadeSlideUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    .hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; font-family: var(--font-en); font-size: 10px; letter-spacing: 0.2em; color: var(--gray); animation: bounce 2s infinite; }
+    .hero-scroll::after { content:''; display:block; width:1px; height:40px; background:linear-gradient(to bottom,var(--gray),transparent); }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+    /* EMPATHY */
+    #empathy { background: var(--dark); }
+    .empathy-list { list-style: none; display: flex; flex-direction: column; }
+    .empathy-item { border-top: 1px solid rgba(255,255,255,0.06); padding: 24px 0; display: flex; align-items: flex-start; gap: 16px; }
+    .empathy-item:last-child { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .empathy-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .empathy-text { font-size: clamp(14px,4vw,16px); color: var(--gray-light); line-height: 1.7; }
+    .empathy-text strong { color: var(--white); font-weight: 700; display: block; margin-bottom: 4px; }
+    .empathy-answer { margin-top: 48px; background: linear-gradient(135deg,rgba(201,168,76,0.08),rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.2); border-radius: 8px; padding: 28px 24px; }
+    .empathy-answer p { font-size: clamp(16px,4.5vw,19px); font-weight: 500; line-height: 1.8; }
+    .empathy-answer p strong { color: var(--gold); }
+
+    /* CONCEPT */
+    #concept { background: var(--black); }
+    .concept-block { margin-bottom: 48px; }
+    .concept-number { font-family: var(--font-en); font-size: 56px; font-weight: 700; color: rgba(201,168,76,0.15); line-height: 1; margin-bottom: -8px; }
+    .concept-heading { font-size: clamp(18px,5vw,22px); font-weight: 700; margin-bottom: 16px; }
+    .concept-text { font-size: clamp(14px,4vw,16px); color: var(--gray-light); line-height: 1.9; }
+    .concept-quote { margin-top: 48px; padding-left: 20px; border-left: 3px solid var(--gold); }
+    .concept-quote p { font-size: clamp(15px,4vw,17px); color: var(--gray-light); line-height: 1.9; font-style: italic; }
+    .concept-quote .quote-author { margin-top: 12px; font-size: 13px; color: var(--gold); font-style: normal; font-weight: 500; }
+
+    /* HOOKING */
+    #hooking { background: var(--dark); overflow: hidden; }
+    .hooking-image-wrap { position: relative; width: 100%; max-width: 480px; margin: 0 auto 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,0.7); }
+    .hooking-image-wrap.fade-in { transform: translateY(40px) scale(0.96); opacity: 0; transition: opacity 0.9s ease, transform 0.9s ease; }
+    .hooking-image-wrap.fade-in.visible { transform: translateY(0) scale(1); opacity: 1; }
+    .hooking-image-wrap img { width: 100%; height: auto; display: block; transition: transform 6s ease; }
+    .hooking-image-wrap:hover img { transform: scale(1.04); }
+    .hooking-image-wrap::after { content:''; position:absolute; bottom:0; left:0; right:0; height:50%; background:linear-gradient(to top,rgba(10,10,10,0.7),transparent); pointer-events:none; }
+    .hooking-badge { position:absolute; top:14px; left:14px; background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4); color:var(--gold); font-size:11px; font-weight:700; letter-spacing:0.1em; padding:5px 12px; border-radius:50px; z-index:2; backdrop-filter:blur(4px); }
+    .hooking-cards { display:flex; flex-direction:column; gap:20px; margin-top:40px; }
+    .hooking-card { display:flex; align-items:flex-start; gap:16px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); border-radius:10px; padding:20px; position:relative; overflow:hidden; }
+    .hooking-card::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--gold); border-radius:3px 0 0 3px; }
+    .hooking-card-icon { font-size:28px; flex-shrink:0; line-height:1; margin-top:2px; }
+    .hooking-card-body h3 { font-size:clamp(15px,4vw,17px); font-weight:700; color:var(--gold); margin-bottom:8px; line-height:1.4; }
+    .hooking-card-body p { font-size:clamp(13px,3.5vw,15px); color:var(--gray-light); line-height:1.85; }
+    .hooking-conclusion { margin-top:36px; background:linear-gradient(135deg,rgba(201,168,76,0.1),rgba(201,168,76,0.03)); border:1px solid rgba(201,168,76,0.25); border-radius:10px; padding:24px 20px; text-align:center; }
+    .hooking-conclusion p { font-size:clamp(15px,4.5vw,18px); font-weight:500; line-height:1.85; }
+    .hooking-conclusion strong { color:var(--gold); font-weight:700; }
+
+    /* ============================
+       蓄光セクション
+    ============================ */
+    #glow {
+      background: var(--black);
+      padding: 80px 20px;
+      overflow: hidden;
+    }
+
+    .glow-heading {
+      font-size: clamp(22px, 6vw, 32px);
+      font-weight: 900;
+      line-height: 1.3;
+      text-align: center;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .glow-heading .glow-text {
+      color: #4ee8c8;
+      text-shadow: 0 0 20px rgba(78, 232, 200, 0.6), 0 0 40px rgba(78, 232, 200, 0.3);
+    }
+    .glow-subheading {
+      text-align: center;
+      font-size: clamp(13px, 3.5vw, 15px);
+      color: var(--gray-light);
+      margin-bottom: 36px;
+      letter-spacing: 0.05em;
+    }
+
+    /* 蓄光画像
+       差し替えポイント: src="assets/kanna/chikko.jpg" → 別ファイル名の場合は変更 */
+    .glow-image-wrap {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto 40px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(78, 232, 200, 0.15),
+        0 0 40px rgba(78, 232, 200, 0.1),
+        0 24px 60px rgba(0, 0, 0, 0.8);
+      position: relative;
+    }
+    .glow-image-wrap.fade-in {
+      transform: translateY(40px) scale(0.97);
+      opacity: 0;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .glow-image-wrap.fade-in.visible {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    .glow-image-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 8s ease;
+    }
+    .glow-image-wrap:hover img { transform: scale(1.03); }
+
+    /* グロー枠の光エフェクト */
+    .glow-image-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(78,232,200,0.3), transparent 40%, transparent 60%, rgba(78,232,200,0.15));
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* 3つのポイントリスト */
+    .glow-points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 44px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .glow-point {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(78, 232, 200, 0.04);
+      border: 1px solid rgba(78, 232, 200, 0.12);
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .glow-point-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(78, 232, 200, 0.1);
+      border: 1px solid rgba(78, 232, 200, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .glow-point-text {
+      font-size: clamp(14px, 4vw, 16px);
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.5;
+    }
+    .glow-point-text span {
+      display: block;
+      font-size: clamp(11px, 3vw, 13px);
+      color: var(--gray-light);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    /* セクション内購入ボタン */
+    .glow-btn-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .btn-glow-yahoo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #ff0033;
+      color: white;
+      padding: 18px 24px;
+      border-radius: 8px;
+      font-size: clamp(15px, 4.5vw, 17px);
+      font-weight: 700;
+      width: 100%;
+      min-height: 60px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      /* 差し替えポイント: href="https://store.shopping.yahoo.co.jp/..." に変更 */
+    }
+    .btn-glow-yahoo:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(255,0,51,0.4); }
+    .btn-glow-mercari {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #e03e2e, #c0392b);
+      color: white;
+      padding: 18px 24px;
+      border-radius: 8px;
+      font-size: clamp(15px, 4.5vw, 17px);
+      font-weight: 700;
+      width: 100%;
+      min-height: 60px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      /* 差し替えポイント: href="https://jp.mercari.com/item/..." に変更 */
+    }
+    .btn-glow-mercari:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(192,57,43,0.5); }
+
+    /* PRODUCT */
+    #product { background: var(--dark); }
+    .product-image-main { width:100%; border-radius:8px; overflow:hidden; margin-bottom:40px; box-shadow:0 16px 48px rgba(0,0,0,0.6); }
+    .product-image-main img { width:100%; height:auto; display:block; }
+    .product-features { display:flex; flex-direction:column; gap:28px; }
+    .feature-card { display:flex; gap:20px; align-items:flex-start; }
+    .feature-icon-wrap { width:48px; height:48px; border-radius:50%; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.3); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:22px; }
+    .feature-body h3 { font-size:clamp(15px,4vw,17px); font-weight:700; margin-bottom:6px; }
+    .feature-body p { font-size:clamp(13px,3.5vw,15px); color:var(--gray-light); line-height:1.8; }
+    .product-sub-images { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:40px; }
+    .product-sub-img { aspect-ratio:1; background:var(--dark3); border-radius:6px; overflow:hidden; }
+    .product-sub-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.4s ease; }
+    .product-sub-img:hover img { transform:scale(1.05); }
+
+    /* RESULTS */
+    #results { background: var(--black); }
+    .slider-wrap { position:relative; overflow:hidden; border-radius:8px; margin-bottom:40px; }
+    .slider-track { display:flex; transition:transform 0.5s ease; }
+    .slide-item { min-width:100%; aspect-ratio:4/3; background:var(--dark3); overflow:hidden; position:relative; }
+    .slide-item img { width:100%; height:100%; object-fit:cover; display:block; }
+    .slide-item .slide-caption { position:absolute; bottom:0; left:0; right:0; padding:10px 14px; background:linear-gradient(to top,rgba(0,0,0,0.7),transparent); font-size:12px; color:rgba(255,255,255,0.85); letter-spacing:0.05em; }
+    .slider-dots { display:flex; justify-content:center; gap:8px; margin-top:16px; }
+    .slider-dot { width:6px; height:6px; border-radius:50%; background:var(--dark3); border:1px solid var(--gray); cursor:pointer; transition:background 0.3s; }
+    .slider-dot.active { background:var(--gold); border-color:var(--gold); }
+    .video-embed-area { width:100%; aspect-ratio:16/9; background:var(--dark3); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; margin-bottom:40px; border:1px dashed rgba(255,255,255,0.08); }
+    .video-embed-area .dummy-icon { font-size:48px; opacity:0.3; }
+    .video-embed-area .dummy-label { font-size:12px; color:var(--gray); text-align:center; line-height:1.6; }
+
+    /* PURCHASE */
+    #purchase { background: var(--dark); text-align:center; }
+    .purchase-lead { font-size:clamp(14px,4vw,16px); color:var(--gray-light); line-height:1.8; margin-bottom:48px; }
+    .purchase-lead strong { color:var(--white); }
+    .btn-wrap { display:flex; flex-direction:column; gap:16px; max-width:400px; margin:0 auto 48px; }
+    .btn-yahoo { display:flex; align-items:center; justify-content:center; gap:10px; background:#ff0033; color:white; padding:20px 28px; border-radius:8px; font-size:clamp(15px,4.5vw,18px); font-weight:700; transition:transform 0.2s,box-shadow 0.2s,background 0.3s; width:100%; min-height:64px; }
+    .btn-yahoo:hover { background:#e60030; transform:translateY(-3px); box-shadow:0 12px 32px rgba(255,0,51,0.4); }
+    .btn-yahoo .btn-sub { display:block; font-size:11px; font-weight:400; opacity:0.85; margin-top:2px; }
+    .btn-yahoo-inner { text-align:left; }
+    .btn-mercari { display:flex; align-items:center; justify-content:center; gap:10px; color:white; padding:20px 28px; border-radius:8px; font-size:clamp(15px,4.5vw,18px); font-weight:700; transition:transform 0.2s,box-shadow 0.2s; width:100%; min-height:64px; background:linear-gradient(135deg,#e03e2e,#c0392b); }
+    .btn-mercari:hover { transform:translateY(-3px); box-shadow:0 12px 32px rgba(192,57,43,0.5); }
+    .btn-mercari .btn-sub { display:block; font-size:11px; font-weight:400; opacity:0.85; margin-top:2px; }
+    .btn-mercari-inner { text-align:left; }
+    .btn-line { display:flex; align-items:center; justify-content:center; gap:10px; background:#06c755; color:white; padding:16px 28px; border-radius:8px; font-size:15px; font-weight:700; transition:transform 0.2s,box-shadow 0.2s; width:100%; min-height:56px; }
+    .btn-line:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(6,199,85,0.4); }
+    .purchase-note { font-size:12px; color:var(--gray); line-height:1.7; }
+
+    /* FOOTER */
+    footer { background:var(--black); border-top:1px solid rgba(255,255,255,0.06); padding:60px 24px 40px; }
+    .footer-profile { display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:40px; }
+    .profile-avatar { width:80px; height:80px; border-radius:50%; background:var(--dark3); border:2px solid var(--gold); display:flex; align-items:center; justify-content:center; font-size:32px; margin-bottom:16px; overflow:hidden; }
+    .profile-name { font-size:20px; font-weight:700; margin-bottom:4px; }
+    .profile-name span { color:var(--gold); }
+    .profile-title { font-family:var(--font-en); font-size:11px; color:var(--gray); letter-spacing:0.2em; margin-bottom:16px; }
+    .profile-bio { font-size:14px; color:var(--gray-light); line-height:1.8; max-width:320px; }
+    .sns-btn { width:44px; height:44px; border-radius:50%; background:var(--dark2); border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; font-size:20px; transition:transform 0.2s,border-color 0.3s; }
+    .sns-btn:hover { transform:translateY(-3px); border-color:var(--gold); }
+    .footer-divider { width:100%; height:1px; background:rgba(255,255,255,0.05); margin-bottom:24px; }
+    .footer-bottom { text-align:center; font-size:12px; color:var(--gray); }
+
+    /* SCROLL TOP */
+    .scroll-top { position:fixed; bottom:24px; right:24px; width:44px; height:44px; background:var(--gold); color:var(--black); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; cursor:pointer; opacity:0; transform:translateY(10px); transition:opacity 0.3s,transform 0.3s; z-index:50; border:none; }
+    .scroll-top.show { opacity:1; transform:translateY(0); }
+    .scroll-top:hover { background:var(--gold-light); }
+
+    @media(min-width:768px){
+      section { padding:100px 32px; }
+      .product-sub-images { grid-template-columns:repeat(4,1fr); }
+      .glow-points { gap:20px; }
+    }
+
+    /* LP追加セクション共通 */
+    .lp-section { text-align: center; margin: 80px 0; }
+    .lp-title { font-size: 20px; margin-bottom: 20px; }
+    .lp-image { width: 100%; max-width: 700px; height: auto; display: block; margin: 0 auto; }
+
+    /* 商品選択カード */
+    .product-select-grid { display:flex; flex-direction:column; gap:16px; max-width:560px; margin:28px auto 0; }
+    .product-select-card { background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.25); border-radius:12px; padding:22px 18px; text-align:left; }
+    .product-select-num { font-family:var(--font-en); font-size:11px; letter-spacing:0.3em; color:var(--gold); margin-bottom:6px; display:block; }
+    .product-select-name { font-size:clamp(15px,4vw,17px); font-weight:700; margin-bottom:6px; }
+    .product-select-desc { font-size:clamp(12px,3.2vw,13px); color:var(--gray-light); line-height:1.7; margin-bottom:14px; }
+    .btn-wrap-mini { display:flex; gap:8px; }
+    .btn-yahoo-mini { flex:1; display:flex; align-items:center; justify-content:center; gap:4px; background:#ff0033; color:white; padding:11px 8px; border-radius:6px; font-size:clamp(11px,3vw,13px); font-weight:700; transition:transform 0.2s,box-shadow 0.2s; min-height:44px; }
+    .btn-yahoo-mini:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(255,0,51,0.4); }
+    .btn-mercari-mini { flex:1; display:flex; align-items:center; justify-content:center; gap:4px; color:white; padding:11px 8px; border-radius:6px; font-size:clamp(11px,3vw,13px); font-weight:700; transition:transform 0.2s,box-shadow 0.2s; min-height:44px; background:linear-gradient(135deg,#e03e2e,#c0392b); }
+    .btn-mercari-mini:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(192,57,43,0.5); }
+    @media(min-width:520px){ .product-select-grid { flex-direction:row; flex-wrap:wrap; } .product-select-card { flex:1; min-width:160px; } }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-logo">IZU TACKLE ONLINE<span>SELF-MADE KANNA</span></div>
+  <a href="#eat-cta" class="header-cta">商品を見る</a>
+</header>
+
+<!-- ① HERO -->
+<section id="hero">
+  <div class="hero-bg-dummy"></div>
+  <div class="hero-bg-overlay"></div>
+  <div class="stars" id="stars"></div>
+  <div class="hero-wave"></div>
+  <div class="hero-content">
+    <div class="hero-badge">AORIIKA FLOAT FISHING GEAR</div>
+    <h1 class="hero-title">
+      <span class="gold">アオリイカ</span><br>
+      <span class="outline">ウキ釣り</span><br>
+      専門カンナ
+    </h1>
+    <p class="hero-subtitle">現場で生まれた、バラさないカンナ</p>
+    <p class="hero-catch">
+      <strong>バレた瞬間、悔しくない？</strong><br>
+      そのバラし、カンナのせいかもしれない。
+    </p>
+  </div>
+  <div class="hero-scroll">SCROLL</div>
+</section>
+
+<!-- ② 共感 -->
+<section id="empathy">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Empathy</span>
+      <h2 class="section-title">こんな経験、<span>ありませんか？</span></h2>
+    </div>
+    <ul class="empathy-list">
+      <li class="empathy-item fade-in fade-in-delay-1">
+        <span class="empathy-icon">🦑</span>
+        <div class="empathy-text"><strong>乗った！と思ったら即バレ</strong>重みを感じた瞬間、次の引きがない。あの虚無感、何度経験しても慣れない。</div>
+      </li>
+
+      <li class="empathy-item fade-in fade-in-delay-3">
+        <span class="empathy-icon">📉</span>
+        <div class="empathy-text"><strong>カンナが開いてバレた</strong>取り込み中に腹側のカンナが外れる。あれ、カンナの問題じゃないの？って思いながら黙って帰る。</div>
+      </li>
+      <li class="empathy-item fade-in fade-in-delay-4">
+        <span class="empathy-icon">🎣</span>
+        <div class="empathy-text"><strong>ウキ釣りの情報が少なすぎる</strong>エギングの情報は山ほどあるのに、ウキ釣りになると急に情報が消える。しかも実釣ベースじゃない。</div>
+      </li>
+      <li class="empathy-item fade-in fade-in-delay-5">
+        <span class="empathy-icon">😤</span>
+        <div class="empathy-text"><strong>せっかく夜に来たのに坊主</strong>仕事終わりに堤防まで来て、1杯も乗らずに終わる夜。それでもまた来てしまうのがウキ釣りの沼。</div>
+      </li>
+      <li class="empathy-item fade-in">
+        <span class="empathy-icon">🐟</span>
+        <div class="empathy-text"><strong>活アジがすぐ弱る</strong>仕掛けを入れてしばらくすると、<br>泳ぎが明らかに悪くなる。<br>それだけで釣れる気がしなくなる。</div>
+      </li>
+    </ul>
+    <div class="empathy-answer fade-in">
+      <p>全部、経験してる。<br>だからこそ、<strong>現場で考えて、現場で作った。</strong><br>データじゃなく、<strong>釣り場から生まれたカンナ。</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ③ コンセプト -->
+<section id="concept">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Concept</span>
+      <h2 class="section-title">なぜ、<span>ウキ釣り</span>なのか</h2>
+    </div>
+    <div class="concept-block fade-in">
+      <div class="concept-number">01</div>
+      <h3 class="concept-heading">エギングでは届かない領域がある</h3>
+      <p class="concept-text">エギングが普及したいま、アオリイカはエギに見慣れている個体も多い。<br>それでも、どんな個体にも"餌"は有効。<br>ウキ釣りは、その本能に素直にアプローチできる釣り方だと思っている。</p>
+    </div>
+    <div class="divider fade-in"></div>
+    <div class="concept-block fade-in">
+      <div class="concept-number">02</div>
+      <h3 class="concept-heading">アジを泳がせる"間"がすごい</h3>
+      <p class="concept-text">ウキが揺れて、静止して、じわじわ消し込む。あの緊張感はエギングにはない。そしてアジが生きているから、アオリイカが自分のタイミングで乗ってくる。こっちがアクションしなくていい分、バレが少ない——はずだった。カンナが良ければ。</p>
+    </div>
+    <div class="divider fade-in"></div>
+    <div class="concept-block fade-in">
+      <div class="concept-number">03</div>
+      <h3 class="concept-heading">初心者でも結果が出しやすい</h3>
+      <p class="concept-text">ウキ釣りは、難しいアクションがいらない。<br>仕掛けを入れて、流して、待つだけ。<br>「何をしていいかわからない」そんな状態でも、ちゃんと釣れる可能性がある。<br>あとはウキの動きを見るだけ。そのシンプルさが、結果に直結する釣り方。</p>
+    </div>
+    <div class="divider fade-in"></div>
+    <div class="concept-block fade-in">
+      <div class="concept-number">04</div>
+      <h3 class="concept-heading">ウキ釣りの魅力</h3>
+      <p class="concept-text">アオリイカは群れで接岸する。<br>幼い頃から海に入って見てきたから分かる。<br><span style="color:var(--white); font-weight:500;">来る時は、一気に来る。</span></p>
+      <p class="concept-text" style="margin-top:16px;">その瞬間を逃さないのがウキ釣り。<br>アタリが出たらすぐ獲れる。手返しがいいから、<br><span style="color:var(--gold); font-weight:700;">30分で一気に数を伸ばせる。</span></p>
+    </div>
+    <div class="divider fade-in"></div>
+    <div class="concept-block fade-in">
+      <div class="concept-number">05</div>
+      <h3 class="concept-heading">実釣経験を活かした商品づくり</h3>
+      <p class="concept-text">実際の釣行経験をもとに、アオリイカ釣りで扱いやすい仕掛けを検証しています。</p>
+      <p class="concept-text" style="margin-top:16px;">現場で使い、失敗を確認し、形を見直す。<br>その繰り返しから、使いやすさと掛かりやすさのバランスを考えています。</p>
+      <p class="concept-text" style="margin-top:16px;">なぜバレたのか。<br>なぜ釣れなかったのか。<br>実釣で感じた課題を、商品づくりに活かしています。</p>
+      <p class="concept-text" style="margin-top:16px; color:var(--white); font-weight:500;">バラしにくさ、交換しやすさ、仕掛けへの組み込みやすさを重視した自作カンナです。</p>
+    </div>
+    <div class="concept-quote fade-in">
+      <p>釣れたから売るんじゃない。<br>バレて悔しくて、<br>作り直して、<br>やっと信頼できるようになったから<br>出してる。<br><br><span style="color:var(--gold); font-style:normal; font-weight:700;">みんなにイカを釣ってほしいから。</span></p>
+      <span class="quote-author">— 伊豆釣具オンライン合同会社</span>
+    </div>
+  </div>
+</section>
+
+<!-- ③.5 フッキング理論 -->
+<section id="hooking">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Hooking Theory</span>
+      <h2 class="section-title">なぜバレるのか。<br><span>フッキングの真実。</span></h2>
+    </div>
+    <!-- 差し替えポイント: src="assets/kanna/fukking.jpg" → 別ファイル名の場合は変更 -->
+    <div class="hooking-image-wrap fade-in fade-in-delay-1">
+      <span class="hooking-badge">実際のフッキング</span>
+      <img src="assets/kanna/fukking.jpg" alt="アオリイカのフッキング実例 - 触腕に掛かった瞬間" loading="lazy" />
+    </div>
+    <div class="fade-in fade-in-delay-2" style="text-align:center;margin-bottom:8px;">
+      <p style="font-size:clamp(13px,3.5vw,14px);color:var(--gray);font-style:italic;">↑ アオリイカが細い触腕でカンナを抱いている瞬間</p>
+    </div>
+    <div class="hooking-cards">
+      <div class="hooking-card fade-in fade-in-delay-1">
+        <span class="hooking-card-icon">🦑</span>
+        <div class="hooking-card-body">
+          <h3>アオリイカは「胴体」ではなく「触腕」で掛かる</h3>
+          <p>ほとんどの場合、アオリイカはエサを触腕（細い腕）で抱えてからカンナに触れる。胴体にフッキングするのは稀で、実際の掛かり場所は細くて柔らかい触腕がほとんどだ。</p>
         </div>
       </div>
-      <small>© 2026 Izu Tsurigu Online LLC. All Rights Reserved.</small>
-    </footer>
+      <div class="hooking-card fade-in fade-in-delay-2">
+        <span class="hooking-card-icon">📐</span>
+        <div class="hooking-card-body">
+          <h3>だから「多点カンナ」が効く</h3>
+          <p>フトコロが広いカンナは、外套（胴体）を想定した設計が多い。触腕に掛ける場合は、より多くの針先が細い面積に接触できる「多点設計」のほうが確実に刺さる。これがバラしを減らす根拠。</p>
+        </div>
+      </div>
+      <div class="hooking-card fade-in fade-in-delay-3">
+        <span class="hooking-card-icon">🪝</span>
+        <div class="hooking-card-body">
+          <h3>「狭いフトコロ」で抜けにくくなる</h3>
+          <p>触腕は柔軟で細い。フトコロが広すぎると、暴れたときに針先が抜けやすい。狭いフトコロで触腕をしっかり包み込む設計にすることで、取り込みまでバレにくくなる。</p>
+        </div>
+      </div>
 
-    <script src="./script.js"></script>
-  </body>
+    </div>
+    <div class="hooking-conclusion fade-in">
+      <p>触腕に掛かる——<br>この事実から逆算して設計したのが<br><strong>自作カンナ。</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ③.51 慣性モーメント理論 -->
+<section class="lp-section">
+  <img src="assets/kanna/inertia-theory.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🔄</span>
+      <div class="hooking-card-body">
+        <h3>【重量バランス設計】慣性モーメント理論</h3>
+        <p>ウキ釣りのアオリイカ釣りでは、強い合わせはいらない。竿を立てて巻いてくるだけで、フッキングが成立する。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">⚙️</span>
+      <div class="hooking-card-body">
+        <h3>カンナ自身が回転して掛かる仕組み</h3>
+        <p>適度な重量を持つカンナは、巻き取り動作の瞬間に慣性（回転する力）が働き、針先が釣り人方向へ自然に回転する。その力が触腕へ自然に刺さるフッキングを生み出す。</p>
+      </div>
+    </div>
+    <div class="hooking-conclusion fade-in">
+      <p>強く合わせるのではなく——<br><strong>カンナ自身が回転して掛かる。</strong><br>カンナの重量設計が、フッキングの精度を決める。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ③.55 エサは無駄にしない -->
+<section class="lp-section">
+  <img src="assets/kanna/reuse-bait-system.jpg" class="lp-image" alt="エサを無駄にしない仕組み">
+</section>
+
+<!-- ③.6 軽すぎてもダメ -->
+<section class="lp-section">
+  <img src="assets/kanna/futokoro.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">⚖️</span>
+      <div class="hooking-card-body">
+        <h3>軽すぎても掛からない</h3>
+        <p>軽すぎるカンナは潮流や水流の影響を受けやすく、針先の向きが安定しない。その結果、触腕にうまく接触せずフッキング率が低下する。触腕に「当たる」ためには、ある程度の重量による姿勢安定が必要になる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③.7 重量メリット -->
+<section class="lp-section">
+  <img src="assets/kanna/kanna-comparison.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🐟</span>
+      <div class="hooking-card-body">
+        <h3>アジが弱らない → 当たりが増える → イカが釣れる</h3>
+        <p>重量が最適に設計されたカンナは、活き餌のアジへの負担が少ない。アジが元気に泳ぎ続けることで自然な動きが出て、アオリイカが反応しやすくなる。アジを長く活かすことが、そのまま釣果に直結する。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③.8 フトコロ設計 -->
+<section class="lp-section">
+  <img src="assets/kanna/futokoro.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🎣</span>
+      <div class="hooking-card-body">
+        <h3>狭いフトコロ設計（カエシ無し）— 合計24本の針先</h3>
+        <p>針（痛点12本）の2段構造で合計24本の針先。イカ釣りの針はカエシが不要。イカの触腕は柔らかいから、カエシがあると身切れを起こしやすくバラシの原因になる。カエシが無くてもテンションを保てば十分に保持できる。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🦑</span>
+      <div class="hooking-card-body">
+        <h3>縦方向の引きに最適な構造</h3>
+        <p>イカとのやり取りは魚のように左右に暴れる動きではなく、縦方向の引きが主体。狭いフトコロで素早く掛ける構造が理想。アオリイカは群れで接岸することが多いから、素早く掛けて取り込み・すぐに仕掛けを入れる手返しが最重要。大きな合わせは不要——竿を立てて巻いてくるだけでガッチリホールドする。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🎯</span>
+      <div class="hooking-card-body">
+        <h3>【ターゲット拡張性能】ヤリイカ・ケンサキ・スルメにも対応</h3>
+        <p>アオリイカ釣りの際に混獲されるヤリイカ・ケンサキイカ・スルメイカ。市販のアオリ用カンナでは触腕が細くフッキング効率が著しく低下するけど、このカンナは狭フトコロ設計と多点フッキング構造により、これらの小型イカ類にも対応できる。</p>
+      </div>
+    </div>
+    <div class="hooking-conclusion fade-in">
+      <p>アタリさえあれば——<br><strong>初心者でも、ちゃんと釣れる。</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ③.9 セットアップ・シンプルイズベスト -->
+<section class="lp-section">
+  <img src="assets/kanna/setup-example.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🎣</span>
+      <div class="hooking-card-body">
+        <h3>使い方は、とてもシンプル</h3>
+        <p>ウキ釣りの仕掛けはシンプルイズベスト。サルカンを追加すれば接点が増える。接点が増えるってことは、そのまま絡みの発生要因が増えるってこと。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">😱</span>
+      <div class="hooking-card-body">
+        <h3>仕掛け絡みは、最大の敵</h3>
+        <p>潮にうまく乗せて、理想的なラインメンディングで完璧に流した30分——回収すると仕掛けが絡んでた。この時点でその30分は完全に無意味。</p>
+      </div>
+    </div>
+    <div class="hooking-conclusion fade-in">
+      <p>だからこそ——<br><strong>余計な接続部は排除する。🦑</strong><br>シンプルな仕掛けが、釣果を守る。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 蓄光セクション -->
+<!--
+  ================================================================
+  差し替えポイント：蓄光画像
+  images/chikko.jpg をこのファイルと同じフォルダの images/ に置いてください。
+  別ファイル名の場合は src="assets/kanna/chikko.jpg" の部分を変更してください。
+  ================================================================
+-->
+<section id="glow">
+  <div class="container">
+
+    <div class="fade-in" style="text-align:center;">
+      <span class="section-label">Glow Specification</span>
+      <h2 class="glow-heading">
+        夜でも<span class="glow-text">しっかりアピール</span><br>蓄光仕様
+      </h2>
+      <p class="glow-subheading">暗い海中でも存在感を放つ、夜釣り専用の仕上げ</p>
+    </div>
+
+    <!-- 蓄光画像（差し替えポイント: src="assets/kanna/chikko.jpg"） -->
+    <div class="glow-image-wrap fade-in fade-in-delay-1">
+      <img src="assets/kanna/chikko.jpg" alt="蓄光仕様のカンナ - ライトを当てると発光" loading="lazy" />
+    </div>
+
+    <div class="glow-points">
+      <div class="glow-point fade-in fade-in-delay-1">
+        <div class="glow-point-icon">🔦</div>
+        <div class="glow-point-text">
+          ライトで数秒照らすだけ
+          <span>仕掛け投入前にサッと当てるだけで準備完了。手間いらず。</span>
+        </div>
+      </div>
+      <div class="glow-point fade-in fade-in-delay-2">
+        <div class="glow-point-icon">🌊</div>
+        <div class="glow-point-text">
+          暗い海中でもしっかりアピール
+          <span>水深が深くなるほど光が届かない夜の海でも、蓄光がイカの目を引く。</span>
+        </div>
+      </div>
+      <div class="glow-point fade-in fade-in-delay-3">
+        <div class="glow-point-icon">🌙</div>
+        <div class="glow-point-text">
+          夜釣り前の準備も簡単
+          <span>常夜灯の下でも、スマホライトでも蓄光できる。特別な道具は不要。</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ④.4 再利用型ベイトシステム -->
+<section class="lp-section">
+  <h2 class="lp-title">再利用型ベイトシステム</h2>
+  <img src="assets/kanna/bbproblem.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🐟</span>
+      <div class="hooking-card-body">
+        <h3>捨てないで、使える</h3>
+        <p>アオリイカ釣りでは、活き餌のアジが捕食されずに死ぬことがある。普通はそのまま捨てることが多いけど——この仕掛けでは、その餌を再利用できる。<br><span style="color:var(--gold);">（イカに頭かじられたやつでもオッケー👌）</span></p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in fade-in-delay-1">
+      <span class="hooking-card-icon">🦑</span>
+      <div class="hooking-card-body">
+        <h3>死餌でも、スイッチが入る</h3>
+        <p>死餌を装着するだけで、ヤリイカ・ケンサキイカ等の捕食スイッチを誘発できる。<br><span style="color:var(--gold);">（実釣経験をもとに設計しています。）</span></p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in fade-in-delay-2">
+      <span class="hooking-card-icon">♻️</span>
+      <div class="hooking-card-body">
+        <h3>ベイトリサイクル型仕掛け</h3>
+        <p>いわばベイトリサイクル型仕掛け。エサを無駄にしない設計。<br><span style="color:var(--gold);">（状況に応じた使い分けを想定しています。）</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④.4.5 汎用性 -->
+<section class="lp-section">
+  <img src="assets/kanna/multi-target.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🐟</span>
+      <div class="hooking-card-body">
+        <h3>汎用型ウキ釣りカンナシステム</h3>
+        <p>イカだけではなく🐟 青物、、、🐟 底物、、、まで対応する。<br>汎用型ウキ釣りカンナシステムなんです😁</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④.5 ラインナップ -->
+<section class="lp-section">
+  <img src="assets/kanna/lineup.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:20px auto 0; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">🪝</span>
+      <div class="hooking-card-body">
+        <h3>自作カンナ — ラインナップ</h3>
+        <p>一本一本ハンドメイドで仕上げた自作カンナ。サイズ・仕様ごとに設計を変え、ウキ釣りの現場で使いながら改良を重ねてきた形です。釣り場・対象・タックルに合わせてお選びください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④.5.1 商品選択 -->
+<section class="lp-section" style="margin:0; padding:48px 20px; background:#111;">
+  <p style="font-size:clamp(11px,3vw,13px); letter-spacing:0.3em; color:var(--gold); font-weight:700; text-transform:uppercase; margin-bottom:16px;">Select Your Kanna</p>
+  <h2 style="font-size:clamp(20px,5.5vw,26px); font-weight:900; margin-bottom:8px;">ラインナップから選んで購入</h2>
+  <p style="font-size:clamp(13px,3.5vw,14px); color:var(--gray-light); margin-bottom:0;">釣り方・スタイルに合わせてお選びください。</p>
+  <div class="product-select-grid">
+    <div class="product-select-card fade-in">
+      <span class="product-select-num">① AJI RIG</span>
+      <h3 class="product-select-name">アジ専用仕掛け</h3>
+      <p class="product-select-desc">活アジを弱らせず、フッキング率を最大化した仕掛けセット。</p>
+      <div class="btn-wrap-mini">
+        <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aori4.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+        <a href="https://jp.mercari.com/shops/product/2JNMxFFMvYRebjmajqLPCx?source_location=share&utm_medium=share&utm_source=ios" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+      </div>
+    </div>
+    <div class="product-select-card fade-in fade-in-delay-1">
+      <span class="product-select-num">② BINBIN RIG</span>
+      <h3 class="product-select-name">金魚ビンビン釣法仕掛け</h3>
+      <p class="product-select-desc">金魚ビンビン釣法専用にチューニングされた仕掛けセット。</p>
+      <div class="btn-wrap-mini">
+        <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/binnbinn4.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+        <a href="https://jp.mercari.com/shops/product/2JNMzCPJUFhRYBRSK9p732?source_location=share&utm_medium=share&utm_source=ios" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+      </div>
+    </div>
+    <div class="product-select-card fade-in fade-in-delay-2">
+      <span class="product-select-num">③ KANNA ONLY</span>
+      <h3 class="product-select-name">カンナのみ 単品</h3>
+      <p class="product-select-desc">仕掛けはすでにお持ちの方へ。カンナ単体での購入もできます。</p>
+      <div class="btn-wrap-mini">
+        <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aorik5.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+        <a href="https://jp.mercari.com/shops/product/2JNMyf8yW8YyqQhBQnULUo?utm_source=ios&utm_medium=share&source_location=share" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④.5.2 金魚ビンビン釣法解説 -->
+<section class="lp-section">
+  <h2 class="lp-title">【金魚ビンビン釣法対応】</h2>
+  <div style="max-width:560px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+    <div class="hooking-card fade-in">
+      <span class="hooking-card-icon">😂</span>
+      <div class="hooking-card-body">
+        <h3>何それ？と思いましたよね</h3>
+        <p>堤防で簡単に釣れる<strong>ネンブツダイ（通称・金魚）</strong>を活エサにして、ウキ釣りでイカを釣る釣法です🐟<br>
+        その金魚ビンビン釣法にも、このカンナは対応できる。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in fade-in-delay-1">
+      <span class="hooking-card-icon">🐟</span>
+      <div class="hooking-card-body">
+        <h3>仕掛けの組み方</h3>
+        <p>細径ハリスを使用し、<strong>小型フック（チヌ針0.8号程度）</strong>でネンブツダイ等の小型ベイトフィッシュを<strong>鼻掛け</strong>。<br>
+        その下、ハリス<strong>約5〜10cm</strong>（ベイトサイズにより調整）の位置に<strong>本カンナを配置</strong>する。</p>
+      </div>
+    </div>
+    <div class="hooking-card fade-in fade-in-delay-2">
+      <span class="hooking-card-icon">🎯</span>
+      <div class="hooking-card-body">
+        <h3>高確率フックアップシステム</h3>
+        <p>この配置により、捕食時の<strong>触腕接触 → 即フッキング</strong>という流れを構築。<br>
+        <span style="color:var(--gold);">実釣で扱いやすい構成です。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 商品紹介 -->
+<section id="product">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Product</span>
+      <h2 class="section-title">自作カンナ<span>について</span></h2>
+    </div>
+    <div class="product-image-main fade-in">
+      <img src="assets/kanna/kan2.jpg" alt="自作カンナ — 正面写真">
+    </div>
+    <div class="product-features">
+      <div class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon-wrap">🪝</div>
+        <div class="feature-body">
+          <h3>バラしにくい「狭いフトコロ」設計</h3>
+          <p>一般的なカンナよりフトコロを意図的に狭くしている。乗った瞬間にしっかり外套に刺さり、取り込みまでバレにくい。取り込みまで安定しやすい設計を目指しています。</p>
+        </div>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon-wrap">🔩</div>
+        <div class="feature-body">
+          <h3>脱落防止の構造</h3>
+          <p>イカが抱いて反転するときの力に耐える形状。市販カンナで経験していた「腹側が外れてバレる」問題を構造から解決している。</p>
+        </div>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon-wrap">🌊</div>
+        <div class="feature-body">
+          <h3>実釣1000日超のフィードバック</h3>
+          <p>机上だけの設計ではなく、実際に堤防で使って、バラして、形を変えて、また使って——を繰り返してできた形。季節・水深・潮の動きを含めたうえでのチューニング。</p>
+        </div>
+      </div>
+      <div class="feature-card fade-in fade-in-delay-4">
+        <div class="feature-icon-wrap">✋</div>
+        <div class="feature-body">
+          <h3>一本一本ハンドメイド</h3>
+          <p>量産品ではない。一本一本手作業で仕上げる分、数は少ない。でも、それがクオリティを保つための選択。大量生産になった瞬間、意味がなくなると思っている。</p>
+        </div>
+      </div>
+    </div>
+    <div class="product-sub-images fade-in">
+      <div class="product-sub-img"><img src="assets/kanna/kan3.jpg" alt="カンナ詳細"></div>
+      <div class="product-sub-img"><img src="assets/kanna/kan4.jpg" alt="カンナ詳細"></div>
+      <div class="product-sub-img"><img src="assets/kanna/kan1.jpg" alt="ハンドメイド制作"></div>
+      <div class="product-sub-img"><img src="assets/kanna/kan2.jpg" alt="カンナ全体"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 実績 -->
+<section id="results">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Results</span>
+      <h2 class="section-title"><span>実釣</span>の記録</h2>
+    </div>
+    <div class="slider-wrap fade-in">
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide-item"><img src="assets/kanna/ika2.jpg" alt="釣果"><span class="slide-caption">アオリイカ 3杯 — 実釣記録</span></div>
+        <div class="slide-item"><img src="assets/kanna/ika8.jpg" alt="釣果"><span class="slide-caption">良型アオリイカ — ウキ釣りにて</span></div>
+        <div class="slide-item"><img src="assets/kanna/ika4.jpg" alt="釣果"><span class="slide-caption">夜の堤防 — 複数キャッチ</span></div>
+        <div class="slide-item"><img src="assets/kanna/ika15.jpg" alt="釣果"><span class="slide-caption">アジ＋アオリイカ — ウキ釣りセット</span></div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+    <!-- 大漁証拠写真 -->
+    <div class="fade-in" style="margin-bottom:32px; border-radius:8px; overflow:hidden; position:relative;">
+      <img src="assets/kanna/ika6.jpg" alt="大漁の証拠" style="width:100%; height:auto; display:block; max-height:400px; object-fit:cover;">
+      <div style="position:absolute; bottom:0; left:0; right:0; padding:16px 20px; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent);">
+        <p style="font-family:var(--font-en); font-size:11px; letter-spacing:0.3em; color:var(--gold); margin-bottom:4px;">PROOF OF CATCH</p>
+        <p style="font-size:14px; font-weight:700; color:var(--white);">クーラー満タン。これが伊豆のウキ釣りの実力。</p>
+      </div>
+    </div>
+</div>
+</section>
+
+<!-- ⑥.5 eat訴求 -->
+<section id="eat-cta" class="lp-section" style="margin:0; padding:80px 20px; background:#0d0d0d;">
+  <img src="assets/kanna/eat.jpg" class="lp-image" alt="">
+  <div style="max-width:560px; margin:32px auto 0; text-align:center;">
+    <p style="font-size:clamp(11px,3vw,13px); letter-spacing:0.3em; color:var(--gold); font-weight:700; text-transform:uppercase; margin-bottom:16px;">Fishing Privilege</p>
+    <h2 style="font-size:clamp(24px,7vw,36px); font-weight:900; line-height:1.4; margin-bottom:20px;">
+      釣って楽しい、<span style="color:var(--gold);">食べておいしい。</span>
+    </h2>
+    <p style="font-size:clamp(14px,4vw,16px); color:var(--gray-light); line-height:1.9; margin-bottom:32px;">
+      ウキ釣りで狙うアオリイカ。<br>
+      仕掛け選びから、釣りをもっと扱いやすく。
+    </p>
+    <div class="hooking-conclusion fade-in" style="margin-bottom:32px;">
+      <p style="font-size:clamp(14px,4vw,16px);">スケスケの釣りたてアオリイカは<br><strong>釣らないと食べられない。</strong><br><span style="color:var(--gold); font-size:clamp(16px,5vw,20px); font-weight:900;">これが、釣り人の特権。</span></p>
+    </div>
+    <p style="font-size:clamp(15px,4.5vw,18px); font-weight:700; color:var(--white); margin-bottom:8px;">アオリイカ釣りをより身近に、より扱いやすく。</p>
+    <p style="font-size:clamp(13px,3.5vw,14px); color:var(--gray); margin-bottom:20px;">まずはカンナを手に取るところから。</p>
+    <p style="font-size:clamp(12px,3.2vw,13px); color:var(--gold); font-weight:700; margin-bottom:24px;">数量限定・ハンドメイドのため在庫僅少です。<br><span style="color:var(--white);">気になったときが買い時です。</span></p>
+    <div class="product-select-grid fade-in" style="text-align:left;">
+      <div class="product-select-card">
+        <span class="product-select-num">① AJI RIG</span>
+        <h3 class="product-select-name">アジ専用仕掛け</h3>
+        <div class="btn-wrap-mini">
+          <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aori4.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+          <a href="https://jp.mercari.com/shops/product/2JNMxFFMvYRebjmajqLPCx?source_location=share&utm_medium=share&utm_source=ios" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+        </div>
+      </div>
+      <div class="product-select-card">
+        <span class="product-select-num">② BINBIN RIG</span>
+        <h3 class="product-select-name">金魚ビンビン釣法仕掛け</h3>
+        <div class="btn-wrap-mini">
+          <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/binnbinn4.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+          <a href="https://jp.mercari.com/shops/product/2JNMzCPJUFhRYBRSK9p732?source_location=share&utm_medium=share&utm_source=ios" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+        </div>
+      </div>
+      <div class="product-select-card">
+        <span class="product-select-num">③ KANNA ONLY</span>
+        <h3 class="product-select-name">カンナのみ 単品</h3>
+        <div class="btn-wrap-mini">
+          <a href="https://store.shopping.yahoo.co.jp/izuokappari-store/aorik5.html?openExternalBrowser=1" target="_blank" rel="noopener" class="btn-yahoo-mini">🛒 Yahoo!</a>
+          <a href="https://jp.mercari.com/shops/product/2JNMyf8yW8YyqQhBQnULUo?utm_source=ios&utm_medium=share&source_location=share" target="_blank" rel="noopener" class="btn-mercari-mini">🏪 メルカリ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- フッター -->
+<footer>
+  <div class="container">
+    <div class="footer-profile">
+      <div class="profile-avatar"><img src="assets/izu-logo.jpg" alt="伊豆釣具オンライン合同会社 ロゴ" style="width:100%;height:100%;object-fit:contain;background:#fff;"></div>
+      <p class="profile-name"><span>伊豆釣具オンライン合同会社</span></p>
+      <p class="profile-title">IZU TSURIGU ONLINE LLC</p>
+      <p class="profile-bio">実際の釣行経験をもとに、アオリイカ釣り向けの自作カンナや仕掛け関連用品を取り扱っています。</p>
+    </div>
+    <div class="footer-divider"></div>
+    <p class="footer-bottom">© 2026 Izu Tsurigu Online LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="ページトップへ">↑</button>
+
+<script>
+  // 星の生成
+  (function(){
+    const c=document.getElementById('stars'); if(!c)return;
+    for(let i=0;i<80;i++){
+      const s=document.createElement('div'); s.className='star';
+      s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*55}%;--dur:${2+Math.random()*4}s;--delay:${Math.random()*4}s;opacity:${0.1+Math.random()*0.5};width:${1+Math.random()}px;height:${1+Math.random()}px;`;
+      c.appendChild(s);
+    }
+  })();
+
+  // フェードイン
+  (function(){
+    const obs=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+    },{threshold:0.12});
+    document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+  })();
+
+  // スライダー
+  (function(){
+    const track=document.getElementById('sliderTrack');
+    const dotsWrap=document.getElementById('sliderDots');
+    if(!track||!dotsWrap)return;
+    const slides=track.querySelectorAll('.slide-item');
+    const total=slides.length; let cur=0,timer;
+    slides.forEach((_,i)=>{
+      const d=document.createElement('div');
+      d.className='slider-dot'+(i===0?' active':'');
+      d.addEventListener('click',()=>goTo(i)); dotsWrap.appendChild(d);
+    });
+    function goTo(i){ cur=(i+total)%total; track.style.transform=`translateX(-${cur*100}%)`; dotsWrap.querySelectorAll('.slider-dot').forEach((d,j)=>d.classList.toggle('active',j===cur)); }
+    function start(){ timer=setInterval(()=>goTo(cur+1),3500); }
+    let sx=0;
+    track.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;clearInterval(timer);},{passive:true});
+    track.addEventListener('touchend',e=>{const d=sx-e.changedTouches[0].clientX;if(Math.abs(d)>40)goTo(d>0?cur+1:cur-1);start();});
+    start();
+  })();
+
+  // スクロールトップ
+  (function(){
+    const btn=document.getElementById('scrollTop'); if(!btn)return;
+    window.addEventListener('scroll',()=>btn.classList.toggle('show',scrollY>400),{passive:true});
+    btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  })();
+
+  // ヘッダー
+  (function(){
+    const h=document.querySelector('header'); if(!h)return;
+    window.addEventListener('scroll',()=>{
+      h.style.background=scrollY>60?'rgba(10,10,10,0.95)':'linear-gradient(to bottom,rgba(0,0,0,0.8),transparent)';
+      h.style.backdropFilter=scrollY>60?'blur(12px)':'blur(4px)';
+    },{passive:true});
+  })();
+</script>
+</body>
 </html>
