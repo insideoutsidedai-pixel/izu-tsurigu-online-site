@@ -53,7 +53,7 @@ button:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 14px clamp(16px, 4vw, 56px);
+  padding: 12px clamp(16px, 4vw, 56px);
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid var(--steel-200);
   backdrop-filter: blur(12px);
@@ -72,15 +72,15 @@ button:focus-visible {
   display: inline-grid;
   flex: 0 0 auto;
   place-items: center;
-  width: 72px;
-  height: 72px;
+  width: 112px;
+  height: 112px;
   overflow: hidden;
   background: var(--white);
-  background-image: url("./assets/company-logo.jpg");
+  background-image: url("./assets/izu-logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 4px;
+  padding: 6px;
   border: 1px solid rgba(20, 95, 141, 0.18);
   box-shadow: 0 8px 20px rgba(7, 24, 39, 0.08);
 }
@@ -539,6 +539,12 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.product-list .wide {
+  grid-column: span 2;
+  border-color: rgba(39, 130, 184, 0.35);
+  background: linear-gradient(180deg, var(--white), var(--cyan-100));
+}
+
 .product-list article {
   position: relative;
   overflow: hidden;
@@ -816,6 +822,126 @@ h1 {
   color: var(--steel-700);
 }
 
+.kanna-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  min-height: 620px;
+  color: var(--white);
+  background: var(--navy-950);
+}
+
+.kanna-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(100deg, rgba(7, 24, 39, 0.94), rgba(7, 24, 39, 0.7) 58%, rgba(7, 24, 39, 0.25));
+}
+
+.kanna-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.62;
+}
+
+.kanna-hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  padding: clamp(76px, 9vw, 132px) clamp(20px, 6vw, 72px);
+}
+
+.kanna-hero-copy h1 {
+  margin: 0 0 22px;
+}
+
+.kanna-hero-copy p:not(.eyebrow) {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(16px, 2.3vw, 20px);
+  font-weight: 700;
+}
+
+.kanna-dark {
+  color: var(--white);
+  background: linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+
+.kanna-dark .section-heading h2,
+.kanna-dark .section-heading p {
+  color: var(--white);
+}
+
+.kanna-feature-grid,
+.kanna-lineup {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.kanna-feature-grid article,
+.kanna-lineup article {
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+}
+
+.kanna-dark .kanna-feature-grid article {
+  color: var(--ink);
+}
+
+.kanna-feature-grid span,
+.kanna-lineup span {
+  color: var(--blue-700);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.kanna-feature-grid h3,
+.kanna-lineup h3 {
+  margin: 10px 0 8px;
+  color: var(--navy-900);
+}
+
+.kanna-feature-grid p,
+.kanna-lineup p {
+  margin: 0;
+  color: var(--steel-700);
+  font-weight: 700;
+}
+
+.kanna-media-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+}
+
+.kanna-media-layout > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.kanna-lineup a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 10px 14px;
+  color: var(--white);
+  font-weight: 900;
+  text-decoration: none;
+  background: var(--blue-700);
+}
+
 .page-actions {
   display: flex;
   flex-wrap: wrap;
@@ -868,7 +994,9 @@ h1 {
   .hero,
   .business-layout,
   .operator-section,
-  .sub-hero {
+  .sub-hero,
+  .kanna-hero,
+  .kanna-media-layout {
     grid-template-columns: 1fr;
   }
 
@@ -886,6 +1014,11 @@ h1 {
   }
 
   .kanna-list {
+    grid-template-columns: 1fr;
+  }
+
+  .kanna-feature-grid,
+  .kanna-lineup {
     grid-template-columns: 1fr;
   }
 }
@@ -918,7 +1051,7 @@ h1 {
 
   .site-nav {
     position: fixed;
-    inset: 81px 0 auto 0;
+    inset: 114px 0 auto 0;
     display: none;
     grid-template-columns: 1fr;
     gap: 0;
@@ -954,8 +1087,8 @@ h1 {
   }
 
   .brand-mark {
-    width: 56px;
-    height: 56px;
+    width: 74px;
+    height: 74px;
   }
 
   .brand-text strong {
