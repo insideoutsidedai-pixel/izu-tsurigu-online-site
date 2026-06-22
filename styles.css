@@ -76,6 +76,10 @@ button:focus-visible {
   height: 44px;
   overflow: hidden;
   background: var(--white);
+  background-image: url("./assets/company-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border: 1px solid rgba(20, 95, 141, 0.18);
 }
 
@@ -201,6 +205,14 @@ h1 {
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.88);
   font-size: clamp(17px, 2.4vw, 22px);
+  font-weight: 700;
+}
+
+.hero-body {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -487,8 +499,8 @@ h1 {
 
 .channel-card {
   display: grid;
-  gap: 12px;
-  min-height: 210px;
+  gap: 18px;
+  min-height: 174px;
   padding: 26px;
   color: var(--white);
   text-decoration: none;
@@ -503,25 +515,8 @@ h1 {
   background: rgba(255, 255, 255, 0.13);
 }
 
-.channel-name {
-  color: #9bd9f3;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.channel-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  color: var(--navy-950);
-  font-size: 18px;
-  font-weight: 900;
-  background: var(--white);
-}
-
 .channel-card strong {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.35;
 }
 
