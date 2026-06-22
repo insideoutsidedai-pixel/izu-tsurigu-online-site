@@ -76,10 +76,6 @@ button:focus-visible {
   height: 112px;
   overflow: hidden;
   background: var(--white);
-  background-image: url("./assets/izu-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   padding: 6px;
   border: 1px solid rgba(20, 95, 141, 0.18);
   box-shadow: 0 8px 20px rgba(7, 24, 39, 0.08);
@@ -274,6 +270,7 @@ h1 {
   width: 112px;
   height: 112px;
   margin: 0 0 18px;
+  padding: 6px;
   object-fit: contain;
   background: var(--white);
   border: 1px solid var(--steel-200);
