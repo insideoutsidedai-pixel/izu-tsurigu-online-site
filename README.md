@@ -25,7 +25,7 @@
 ## 販売チャネル
 
 - Yahoo!ショッピング：https://store.shopping.yahoo.co.jp/izuokappari-store/
-- ヤフオクストア：https://auctions.yahoo.co.jp/seller/o5G3k7uki4eNkNheHkWHaRjSpY9i?user_type=c
+- Yahoo!オークション ストア：https://auctions.yahoo.co.jp/seller/o5G3k7uki4eNkNheHkWHaRjSpY9i?user_type=c
 - メルカリShops：https://jp.mercari.com/shops/profile/imRdw63Ru2P4G77dQxnxq9
 
 ## 取扱商品
