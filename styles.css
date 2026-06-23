@@ -496,6 +496,25 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.channel-note {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 22px;
+  padding: 18px 20px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.channel-note strong {
+  font-size: 18px;
+}
+
+.channel-note span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+}
+
 .channel-card {
   display: grid;
   gap: 18px;
@@ -980,6 +999,10 @@ h1 {
 }
 
 .site-footer strong {
+  color: var(--white);
+}
+
+.site-footer a {
   color: var(--white);
 }
 

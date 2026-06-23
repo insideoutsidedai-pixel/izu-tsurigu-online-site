@@ -25,6 +25,24 @@
         "email": "izuokappari-shop@e-mail.jp",
         "telephone": "0465-62-1156",
         "faxNumber": "0465-62-1156",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+81-465-62-1156",
+          "contactType": "customer support",
+          "availableLanguage": "Japanese",
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        },
         "address": {
           "@type": "PostalAddress",
           "postalCode": "259-0312",
@@ -64,6 +82,7 @@
         <a href="#products">取扱商品</a>
         <a href="#company">会社概要</a>
         <a href="#law">特商法表記</a>
+        <a href="#privacy">プライバシーポリシー</a>
         <a href="#contact">お問い合わせ</a>
       </nav>
     </header>
@@ -91,7 +110,7 @@
           <dl>
             <div>
               <dt>法人番号</dt>
-              <dd>6021003017602</dd>
+              <dd><a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6021003017602" target="_blank" rel="noopener">6021003017602</a></dd>
             </div>
             <div>
               <dt>代表社員</dt>
@@ -104,6 +123,10 @@
             <div>
               <dt>電話 / FAX</dt>
               <dd><a href="tel:0465621156">0465-62-1156</a></dd>
+            </div>
+            <div>
+              <dt>受付時間</dt>
+              <dd>平日 9:00〜17:00</dd>
             </div>
           </dl>
         </aside>
@@ -128,7 +151,7 @@
       <section class="verification-strip" aria-label="会社基本情報">
         <div>
           <span>法人番号掲載</span>
-          <strong>6021003017602</strong>
+          <strong><a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6021003017602" target="_blank" rel="noopener">6021003017602</a></strong>
         </div>
         <div>
           <span>販売チャネル</span>
@@ -227,6 +250,10 @@
           <h2>販売チャネル</h2>
           <p>各モール・マーケットプレイスにて、釣具および釣り関連用品を販売しています。</p>
         </div>
+        <div class="channel-note">
+          <strong>販売中の商品はこちらから確認できます。</strong>
+          <span>現在販売している商品、価格、送料、在庫状況は各販売チャネルの商品ページに掲載しています。</span>
+        </div>
         <div class="channel-grid">
           <a class="channel-card" href="https://store.shopping.yahoo.co.jp/izuokappari-store/" target="_blank" rel="noopener">
             <strong>Yahoo!ショッピング</strong>
@@ -292,7 +319,9 @@
           </div>
           <div role="row">
             <span role="cell">法人番号</span>
-            <strong role="cell">6021003017602</strong>
+            <strong role="cell">
+              <a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6021003017602" target="_blank" rel="noopener">6021003017602（国税庁法人番号公表サイトで確認）</a>
+            </strong>
           </div>
           <div role="row">
             <span role="cell">代表社員</span>
@@ -313,6 +342,10 @@
           <div role="row">
             <span role="cell">メール</span>
             <strong role="cell"><a href="mailto:izuokappari-shop@e-mail.jp">izuokappari-shop@e-mail.jp</a></strong>
+          </div>
+          <div role="row">
+            <span role="cell">営業時間</span>
+            <strong role="cell">電話受付：平日 9:00〜17:00 ／ お問い合わせメール：24時間受付</strong>
           </div>
           <div role="row">
             <span role="cell">設立</span>
@@ -377,8 +410,16 @@
             <strong>ご注文・決済確認後、通常1〜2営業日以内に発送します。商品やご注文状況により発送時期が異なる場合は、各販売ページに記載の発送予定に従って発送します。</strong>
           </div>
           <div>
+            <span>返品期限</span>
+            <strong>商品到着後7日以内に、各販売チャネルの問い合わせ機能または当社連絡先までご連絡ください。各販売チャネルに個別の規定がある場合は、その規定に準じます。</strong>
+          </div>
+          <div>
             <span>返品交換</span>
             <strong>商品不良または誤配送の場合は、各販売チャネルの規定に基づき対応します。お客様都合による返品・交換は、各販売チャネルの規定に準じます。</strong>
+          </div>
+          <div>
+            <span>返品送料</span>
+            <strong>商品不良または誤配送の場合は当社負担にて対応します。お客様都合による返品・交換の場合は、各販売チャネルの規定に準じます。</strong>
           </div>
           <div>
             <span>販売チャネル</span>
@@ -387,11 +428,45 @@
         </div>
       </section>
 
+      <section id="privacy" class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Privacy Policy</p>
+          <h2>プライバシーポリシー</h2>
+          <p>お問い合わせやお取引に伴い取得する個人情報を、適切に管理します。</p>
+        </div>
+        <div class="legal-grid policy-grid">
+          <div>
+            <span>個人情報の取得</span>
+            <strong>当社は、お問い合わせ、商品の販売、発送、連絡対応に必要な範囲で、氏名、住所、電話番号、メールアドレス等の個人情報を取得する場合があります。</strong>
+          </div>
+          <div>
+            <span>利用目的</span>
+            <strong>取得した個人情報は、お問い合わせ対応、商品の発送、取引連絡、返品・交換対応、販売チャネル上で必要となる業務のために利用します。</strong>
+          </div>
+          <div>
+            <span>第三者提供</span>
+            <strong>法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供しません。ただし、配送会社、販売チャネル運営会社など、業務遂行に必要な範囲で提供する場合があります。</strong>
+          </div>
+          <div>
+            <span>管理体制</span>
+            <strong>個人情報への不正アクセス、紛失、改ざん、漏えい等を防止するため、必要かつ適切な管理に努めます。</strong>
+          </div>
+          <div>
+            <span>開示・訂正・削除</span>
+            <strong>ご本人から個人情報の開示、訂正、利用停止、削除等のご希望があった場合は、法令に従い適切に対応します。</strong>
+          </div>
+          <div>
+            <span>お問い合わせ窓口</span>
+            <strong>伊豆釣具オンライン合同会社<br><a href="mailto:izuokappari-shop@e-mail.jp">izuokappari-shop@e-mail.jp</a></strong>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="section contact-section">
         <div class="section-heading">
           <p class="eyebrow">Contact</p>
           <h2>お問い合わせ</h2>
-          <p>お取引、商品、法人情報に関するお問い合わせは、下記連絡先までお願いいたします。</p>
+          <p>お取引、商品、法人情報に関するお問い合わせは、下記連絡先までお願いいたします。電話受付は平日9:00〜17:00、メールは24時間受け付けています。</p>
         </div>
         <div class="contact-cards">
           <a href="tel:0465621156">
@@ -418,7 +493,7 @@
         <img class="footer-logo" src="./assets/izu-logo.jpg" alt="" loading="lazy">
         <div>
           <strong>伊豆釣具オンライン合同会社</strong>
-          <span>法人番号 6021003017602</span>
+          <span>法人番号 <a href="https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6021003017602" target="_blank" rel="noopener">6021003017602</a></span>
         </div>
       </div>
       <p>© 2026 Izu Tsurigu Online LLC. All Rights Reserved.</p>
