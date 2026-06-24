@@ -62,7 +62,6 @@
 - `assets/bluefish-catch.jpg`：青物の釣果写真
 - `assets/mackerel-catch.jpg`：サバの釣果写真
 - `assets/bonito-closeup.jpg`：カツオ類の釣果写真
-- `assets/lobster-catch.jpg`：夜釣りの釣果写真
 
 ## デザイン更新内容
 
