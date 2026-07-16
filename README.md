@@ -21,14 +21,14 @@
 - FAX：0465-62-1156
 - メール：izuokappari-shop@e-mail.jp
 - 営業時間：電話受付 平日 9:00〜17:00、メール 24時間受付
-- 設立：2026年6月
+- 設立：2026年6月1日
+- 運営体制：代表社員1名、従業員2名（計3名）
 - 事業内容：釣具販売、釣り関連用品販売、ECサイト運営、釣具企画販売
 
 ## 販売チャネル
 
 - Yahoo!ショッピング：https://store.shopping.yahoo.co.jp/izuokappari-store/
 - Yahoo!オークション ストア：https://auctions.yahoo.co.jp/seller/o5G3k7uki4eNkNheHkWHaRjSpY9i?user_type=c
-- メルカリShops：https://jp.mercari.com/shops/profile/imRdw63Ru2P4G77dQxnxq9
 
 ## 取扱商品
 
@@ -73,6 +73,8 @@
 - 取扱商品カードに画像を追加
 - 電話、FAX、メールをアイコン付きカード表示に変更
 - Yahoo!ショッピングの掲載商品数、ストア評価、レビュー件数を事業実績として掲載
+- 個人事業開始から法人化までの事業沿革を掲載
+- 代表社員と従業員2名の役割分担、本店所在地での業務実態を掲載
 
 ## Cloudflare Pages 設定
 
