@@ -608,6 +608,55 @@ h1 {
   font-weight: 700;
 }
 
+.workflow-section {
+  background: linear-gradient(180deg, var(--white), var(--steel-100));
+}
+
+.workflow-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: workflow;
+}
+
+.workflow-list li {
+  position: relative;
+  min-height: 220px;
+  padding: 28px;
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+  border-bottom: 4px solid var(--blue-500);
+  box-shadow: 0 12px 30px rgba(13, 42, 67, 0.07);
+}
+
+.workflow-list li > span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 900;
+  background: var(--navy-900);
+  border-radius: 50%;
+}
+
+.workflow-list h3 {
+  margin: 18px 0 9px;
+  color: var(--navy-900);
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.workflow-list p {
+  margin: 0;
+  color: var(--steel-700);
+  font-weight: 700;
+}
+
 .business-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -1332,6 +1381,10 @@ h1 {
   .workplace-note {
     grid-template-columns: 1fr;
   }
+
+  .workflow-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -1369,6 +1422,7 @@ h1 {
   .verification-strip,
   .achievement-metrics,
   .history-list li,
+  .workflow-list,
   .business-cards,
   .product-list,
   .channel-grid,
@@ -1420,6 +1474,11 @@ h1 {
   }
 
   .product-list article {
+    padding: 22px;
+  }
+
+  .workflow-list li {
+    min-height: auto;
     padding: 22px;
   }
 
