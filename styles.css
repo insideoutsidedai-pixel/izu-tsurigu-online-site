@@ -930,6 +930,10 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.contact-cards.two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .contact-cards a,
 .contact-cards div {
   display: grid;
@@ -1391,6 +1395,10 @@ h1 {
   }
 
   .channel-grid.two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cards.two-columns {
     grid-template-columns: 1fr;
   }
 
