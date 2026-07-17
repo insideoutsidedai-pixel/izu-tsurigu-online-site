@@ -737,6 +737,20 @@ h1 {
   line-height: 1.35;
 }
 
+.channel-details {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.channel-details span:last-child {
+  color: var(--white);
+}
+
 .channel-card em {
   display: inline-flex;
   align-items: center;
