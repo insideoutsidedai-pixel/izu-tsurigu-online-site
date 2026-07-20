@@ -65,6 +65,7 @@
 - `assets/bonito-closeup.jpg`：カツオ類の釣果写真
 - `assets/business-inventory.jpg`：本店所在地における商品在庫の保管写真
 - `assets/business-inspection.jpg`：電気ウキの点灯状態を確認する検品作業写真
+- `assets/business-packing.jpg`：緩衝材を使用した商品の梱包作業写真
 
 ## デザイン更新内容
 
