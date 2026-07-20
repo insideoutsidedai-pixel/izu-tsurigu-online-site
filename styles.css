@@ -714,6 +714,91 @@ h1 {
   font-weight: 700;
 }
 
+.product-planning-case {
+  margin-top: clamp(34px, 6vw, 64px);
+  padding: clamp(26px, 5vw, 54px);
+  color: var(--navy-900);
+  background: var(--steel-100);
+  border: 1px solid var(--steel-200);
+}
+
+.product-planning-heading {
+  max-width: 820px;
+  margin-bottom: 28px;
+}
+
+.product-planning-heading h3 {
+  margin: 6px 0 12px;
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.35;
+}
+
+.product-planning-heading p:last-child {
+  margin: 0;
+  color: var(--steel-700);
+  font-weight: 700;
+}
+
+.product-planning-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-planning-steps figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+}
+
+.product-planning-steps button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: var(--navy-900);
+  border: 0;
+  cursor: zoom-in;
+}
+
+.product-planning-steps img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.product-planning-steps button:hover img {
+  transform: scale(1.02);
+}
+
+.product-planning-steps figcaption {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+}
+
+.product-planning-steps strong {
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+.product-planning-steps span {
+  color: var(--steel-700);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.product-planning-outcome {
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  color: var(--white);
+  font-weight: 700;
+  background: var(--navy-900);
+}
+
 .business-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
@@ -1623,6 +1708,10 @@ h1 {
   }
 
   .business-photo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-planning-steps {
     grid-template-columns: 1fr;
   }
 
