@@ -63,6 +63,7 @@
 - `assets/bluefish-catch.jpg`：青物の釣果写真
 - `assets/mackerel-catch.jpg`：サバの釣果写真
 - `assets/bonito-closeup.jpg`：カツオ類の釣果写真
+- `assets/business-inventory.jpg`：本店所在地における商品在庫の保管写真
 
 ## デザイン更新内容
 
