@@ -66,6 +66,7 @@
 - `assets/business-inventory.jpg`：本店所在地における商品在庫の保管写真
 - `assets/business-inspection.jpg`：電気ウキの点灯状態を確認する検品作業写真
 - `assets/business-packing.jpg`：緩衝材を使用した商品の梱包作業写真
+- `assets/business-shipping-ready.jpg`：梱包を終えた注文商品の発送前準備写真
 - `assets/business-product-photography.jpg`：撮影機材を使用した商品撮影作業写真
 - `assets/business-product-planning.jpg`：ウキ本体とウキトップの組み合わせを検討する商品企画写真
 - `assets/business-product-night-visibility.jpg`：発光するウキトップの点灯・視認性確認写真
