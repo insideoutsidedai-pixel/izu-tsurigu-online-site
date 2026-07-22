@@ -71,6 +71,7 @@
 - `assets/business-product-planning.jpg`：ウキ本体とウキトップの組み合わせを検討する商品企画写真
 - `assets/business-product-night-visibility.jpg`：発光するウキトップの点灯・視認性確認写真
 - `assets/business-product-day-visibility.jpg`：日中を想定したウキトップの視認性確認写真
+- `assets/featured-fluorocarbon-line.jpg`：Yahoo!ショッピングで販売中の代表商品画像
 
 ## デザイン更新内容
 
@@ -87,6 +88,7 @@
 - 商品調査・仕入れから発送・購入後対応までの業務の流れを掲載
 - 釣行写真を商品選定・セット商品企画に活かすフィールドテスト事例として掲載
 - 会社情報と連絡先を明記したプライバシーポリシー全文ページを掲載
+- Yahoo!ショッピングで販売中の代表商品と商品ページへの直接リンクを掲載
 
 ## Cloudflare Pages 設定
 

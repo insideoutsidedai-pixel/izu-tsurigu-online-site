@@ -351,6 +351,105 @@ h1 {
   border-bottom: 1px solid var(--steel-200);
 }
 
+.featured-product-section {
+  background: linear-gradient(180deg, var(--white), var(--steel-100));
+}
+
+.featured-product-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(30px, 6vw, 72px);
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 52px);
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+  box-shadow: 0 18px 48px rgba(7, 24, 39, 0.1);
+}
+
+.featured-product-image {
+  position: relative;
+  margin: 0;
+  padding: clamp(20px, 4vw, 38px);
+  background: var(--steel-100);
+  border: 1px solid var(--steel-200);
+}
+
+.featured-product-image::after {
+  content: "Yahoo!ショッピングで販売中";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  padding: 7px 10px;
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 900;
+  background: var(--navy-900);
+}
+
+.featured-product-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--white);
+}
+
+.featured-product-copy {
+  min-width: 0;
+}
+
+.featured-product-label {
+  margin: 0 0 10px;
+  color: var(--blue-700);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.featured-product-copy h2 {
+  margin: 0 0 18px;
+  color: var(--navy-900);
+  font-size: clamp(30px, 4.5vw, 52px);
+  line-height: 1.25;
+}
+
+.featured-product-copy > p:not(.eyebrow):not(.featured-product-label):not(.featured-product-note) {
+  margin: 0;
+  color: var(--steel-700);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.featured-product-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featured-product-points li {
+  padding: 7px 11px;
+  color: var(--navy-900);
+  font-size: 13px;
+  font-weight: 900;
+  background: var(--cyan-100);
+  border-left: 3px solid var(--blue-500);
+}
+
+.featured-product-note {
+  margin: 20px 0 0;
+  color: var(--steel-500);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.featured-product-button {
+  margin-top: 24px;
+}
+
 .achievement-copy {
   max-width: 650px;
 }
@@ -1615,6 +1714,7 @@ h1 {
 @media (max-width: 1080px) {
   .hero,
   .achievement-section,
+  .featured-product-card,
   .business-layout,
   .operator-section,
   .sub-hero,
@@ -1811,6 +1911,23 @@ h1 {
 
   .achievement-section {
     padding: 48px 18px;
+  }
+
+  .featured-product-card {
+    padding: 18px;
+  }
+
+  .featured-product-image {
+    padding: 14px;
+  }
+
+  .featured-product-image::after {
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .featured-product-button {
+    width: 100%;
   }
 
   .trust-panel,
