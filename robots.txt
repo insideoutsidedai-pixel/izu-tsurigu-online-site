@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://izuokappari.com/sitemap.xml
