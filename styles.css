@@ -719,6 +719,62 @@ h1 {
   font-weight: 700;
 }
 
+.office-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.office-photo-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+  box-shadow: 0 16px 38px rgba(13, 42, 67, 0.1);
+}
+
+.office-photo-card button {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  overflow: hidden;
+  background: var(--navy-900);
+  border: 0;
+  cursor: zoom-in;
+}
+
+.office-photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.office-photo-card button:hover img {
+  transform: scale(1.02);
+}
+
+.office-photo-card figcaption {
+  display: grid;
+  gap: 7px;
+  padding: 20px 22px 24px;
+}
+
+.office-photo-card strong {
+  color: var(--navy-900);
+  font-size: 18px;
+}
+
+.office-photo-card span {
+  color: var(--steel-700);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
 .workflow-section {
   background: linear-gradient(180deg, var(--white), var(--steel-100));
 }
@@ -1816,6 +1872,10 @@ h1 {
   }
 
   .workplace-note {
+    grid-template-columns: 1fr;
+  }
+
+  .office-photo-grid {
     grid-template-columns: 1fr;
   }
 
